@@ -1,3 +1,4 @@
+import {storyLines} from "../../storyModules/storyObjectArray.js"
 // // Requiring the lodash library  
 // import _ from "C:/Users/Leybe/AppData/Local/Microsoft/TypeScript/4.2/node_modules/@types/lodash/index.js";
 // // const lodash = require("lodash");
@@ -16,8 +17,9 @@ alert("HELLO FROM THE OTHER SIDE")
 
 //Defining the different story lines, later on it will be objects
 
-
+console.log(storyLines)
 
 //We put it at hte bottom to load once everything is loaded
 
 
+// Now we need to grab all the code form all the files

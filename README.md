@@ -64,4 +64,14 @@ npm install webpack webpack-cli --save-dev
 ```
 
 
+**End of installation**
+---
+On the commit #3 we will find as the webpack has been installed and gets the code from index.js into main.js compiled on a single line.
+In order to keep updating webpack you must execute npm start.
+
+
+
+**Implementation of old code with dependencies**
+---
+Sucessfully implemented old code and called trough index.js. Commit #4 shows an example of how sucessfully was execujet, it is important to do the npm start from the webpack-demo folder.
 
