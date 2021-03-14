@@ -39,4 +39,29 @@ A file called module-a.js that contains a javascript module that makes use of th
 ## HTML
 Create an index.html file that serves as an entry point to the application. It is necessary that this file automatically includes the assets generated. This means that webpack has to be responsible for injecting calls to assets.
 
+---
+```
+File structure and readme have been inserted in commit #1 and 2#
+```
+---
+<br>
+
+## Installing WebPack
+In order to install webpack we made use of the following tutorial part
+
+[![Installing and Running WebPack](./assets/howToInstall.png)](https://www.youtube.com/watch?v=MpGLUVbqoYQ&t=1831s "Installing and Running WebPack")
+
+You can aswell go to the offical website and follow the instructions
+
+## **BASIC SETUP**
+First let's create a directory, initialize npm, install webpack locally, and install the webpack-cli (the tool used to run webpack on the command line):
+
+```
+mkdir webpack-demo
+cd webpack-demo
+npm init -y
+npm install webpack webpack-cli --save-dev
+```
+
+
 
