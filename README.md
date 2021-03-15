@@ -90,3 +90,55 @@ The file you will see the sue of eval in development, it is configured this way:
    devtool: "none"
 + And we will see as the code on the file main.js remains unchanged
 + __webpack_require__ will make sure eveyrthing works as it should
+
+
+**LOADERS**
+---
+Loaders can transform files from a different languafes to Javadcript or inline images as data URLSs, or even importing CSS files.
+
+In order to get this loaders to work, we have to set the webpack.config.js
+
+For example, you can use loaders to tell webpack to load a CSS file or to convert SASS to JavaScript. To do this, you would start by installing the loaders you need:
+````
+npm install --save-dev css-loader sass-loader
+````
+And then instruct webpack to use the css-loader for every .css file and the sass-loader for all .scss files:
+
+webpack.config.js
+````
+module.exports = {
+  module: {
+    rules: [
+      { test: /\.css$/, use: 'css-loader' },
+      { test: /\.scss$/, use: 'scss-loader' },
+    ],
+  },
+};
+
+````
+**The dolar at the end means that has to end with that extension**
++ Therefore, we add it to the config file of webpack.
++ We add it aswell as an import in the index js css file.
++ We execute npm start and we see all is imported in the index.js.
+
+**Style-loader**
+---
+Style loader will take the js inserted in the index.js and will made it for the DOM.
++ We install style-loader
+  + ```` 
+    npm install style-loader --save-dev
+    ````
++ We put style loader before css-loader in the webpack-config
+  + ````
+              { test: /\.css$/, 
+            use: ['style-loader','css-loader'] },
+          { test: /\.scss$/, 
+            use:  ['style-loader','scss-loader'] }
+        ],
+      }
+    ````
++ If wee now, we take ut the style link on index.html, and you will see as the style is displayed.
+    
+
+
+

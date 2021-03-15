@@ -1,4 +1,5 @@
 import {storyLines} from "../../storyModules/storyObjectArray.js"
+import "./css/main.css"
 // // Requiring the lodash library  
 // import _ from "C:/Users/Leybe/AppData/Local/Microsoft/TypeScript/4.2/node_modules/@types/lodash/index.js";
 // // const lodash = require("lodash");
