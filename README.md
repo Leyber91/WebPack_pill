@@ -75,3 +75,18 @@ In order to keep updating webpack you must execute npm start.
 ---
 Sucessfully implemented old code and called trough index.js. Commit #4 shows an example of how sucessfully was execujet, it is important to do the npm start from the webpack-demo folder.
 
+**Configuring Webpack**
+---
+On this segment we will change the default configuration, at this moment dist is generated and it runs through index.js without telling it to do it before, let's change that.
+
+On the file **webpack.conf.js** we will put the specifics
+
+If in de cofniguration file, we set it to **development** it will stop minimazing it.
+
+The file you will see the sue of eval in development, it is configured this way:
++ We go to dvlopment tool
++ We insert 
++ ````
+   devtool: "none"
++ And we will see as the code on the file main.js remains unchanged
++ __webpack_require__ will make sure eveyrthing works as it should
